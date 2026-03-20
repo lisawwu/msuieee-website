@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Us | MSU IEEE</title>
+
+  <link rel="stylesheet" href="static/css/navbar.css">
+  <link rel="stylesheet" href="static/css/header.css">
+  <link rel="stylesheet" href="static/css/main.css">
+  <link rel="stylesheet" href="static/css/footer.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700;800&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="static/images/ieee.png" alt="MSU IEEE Logo" class="logo-img" />
+        </a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="joinus.html">Join Us</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="about-page-title fade-in">
+      <div class="about-page-container">
+        <h1>JOIN OUR COMMUNITY TODAY</h1>
+      </div>
+    </section>
+
+    <section class="about-page-section fade-in">
+      <div class="about-page-container">
+        <p>
+          Become a member of the MSU IEEE Student Branch to unlock exclusive resources,
+          attend special events, and connect with like-minded peers in engineering.
+        </p>
+      </div>
+    </section>
+
+    <section class="about-page-section fade-in">
+      <div class="about-page-container">
+        <h2>When You Join IEEE, You:</h2>
+
+        <div class="eboard-grid">
+          <div class="eboard-card">
+            <h3>Join a Global Community</h3>
+            <p>
+              Become part of a network of over 420,000 technology and engineering
+              professionals united by a shared desire to learn, interact, collaborate,
+              and innovate.
+            </p>
+          </div>
+
+          <div class="eboard-card">
+            <h3>Access Resources</h3>
+            <p>
+              Get the resources and opportunities you need to stay up to date with
+              changes in technology and continue developing your skills.
+            </p>
+          </div>
+
+          <div class="eboard-card">
+            <h3>Build Your Network</h3>
+            <p>
+              Connect with professionals in your local area and within specific technical
+              interests while expanding your academic and career opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-page-section fade-in">
+      <div class="about-page-container">
+        <h2>Join Our Community</h2>
+        <p>
+          Connect with fellow students and professionals in electrical and electronics
+          engineering. Our Discord server is a hub for collaboration, sharing resources,
+          and networking with peers.
+        </p>
+        <p>
+          Stay connected with the MSU IEEE Student Branch by following us on Instagram.
+          Get updates on workshops, hackathons, networking events, and behind-the-scenes
+          content from our projects and meetings.
+        </p>
+      </div>
+    </section>
+
+    <section class="social-section fade-in">
+      <div class="about-page-container">
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/company/ieee-msu-student-branch/" target="_blank" rel="noopener noreferrer">
+            <img src="static/images/linkedin.svg.png" alt="LinkedIn">
+          </a>
+
+          <a href="https://www.instagram.com/ieeemsu" target="_blank" rel="noopener noreferrer">
+            <img src="static/images/instagram.svg.webp" alt="Instagram">
+          </a>
+
+          <a href="https://discord.gg/95zWKSY6hj" target="_blank" rel="noopener noreferrer">
+            <img src="static/images/discord.jpg" alt="Discord">
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 MSU IEEE Student Branch. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, {
+      threshold: 0.15
+    });
+
+    fadeElements.forEach((el) => observer.observe(el));
+  </script>
+
+</body>
+</html>

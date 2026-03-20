@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sponsors | MSU IEEE</title>
+
+  <link rel="stylesheet" href="static/css/navbar.css">
+  <link rel="stylesheet" href="static/css/header.css">
+  <link rel="stylesheet" href="static/css/main.css">
+  <link rel="stylesheet" href="static/css/footer.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700;800&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="static/images/ieee.png" alt="MSU IEEE Logo" class="logo-img" />
+        </a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="joinus.html">Join Us</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="about-page-title fade-in">
+      <div class="about-page-container">
+        <h1>SPONSORS</h1>
+      </div>
+    </section>
+
+    <section class="about-page-section fade-in">
+      <div class="about-page-container">
+        <h2>Want to work with our student branch?</h2>
+        <p>
+          Sponsor our organization and become an MSU IEEE Student Branch sponsor.
+        </p>
+        <p>
+          Our sponsors play a crucial role in helping us provide hands-on workshops,
+          industry seminars, and networking opportunities that prepare students for
+          successful careers in technology.
+        </p>
+        <p>
+          We are proud to partner with companies and organizations that share our
+          passion for engineering and innovation. Thank you to our sponsors for
+          supporting our mission.
+        </p>
+      </div>
+    </section>
+
+    <section class="about-page-section fade-in">
+      <div class="about-page-container">
+        <h2>Why Sponsor Us?</h2>
+
+        <div class="eboard-grid">
+          <div class="eboard-card">
+            <h3>Student Exposure</h3>
+            <p>
+              Gain direct exposure to talented and motivated engineering students.
+            </p>
+          </div>
+
+          <div class="eboard-card">
+            <h3>Brand Awareness</h3>
+            <p>
+              Build brand awareness within the next generation of engineers.
+            </p>
+          </div>
+
+          <div class="eboard-card">
+            <h3>Recruitment Opportunities</h3>
+            <p>
+              Connect with potential interns and future employees.
+            </p>
+          </div>
+
+          <div class="eboard-card">
+            <h3>Support STEM Education</h3>
+            <p>
+              Support STEM education and hands-on technical learning for students.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-page-section fade-in">
+      <div class="about-page-container">
+        <h2>Become a Sponsor</h2>
+        <p>
+          Interested in partnering with us? We offer various sponsorship tiers with
+          benefits such as logo placement, speaking opportunities, and direct student
+          engagement.
+        </p>
+        <p>
+          Contact us today to learn more about sponsorship opportunities and how your
+          organization can get involved.
+        </p>
+        <p>
+          428 South Shaw Lane<br>
+          East Lansing, MI 48824<br>
+          United States
+        </p>
+        <p>
+          Email: ieeemsustudentbranch@gmail.com<br>
+        </p>
+      </div>
+    </section>
+
+    <section class="about-page-section fade-in">
+      <div class="about-page-container">
+        <h2>Our Valued Sponsors</h2>
+
+        <div class="gallery-container">
+          <div class="gallery-card sponsor-logo">
+            <img src="static/images/ieeeblue.svg.png" alt="Sponsor 1 Logo">
+          </div>
+
+          <div class="gallery-card sponsor-logo">
+            <img src="static/images/msuegr.webp" alt="Sponsor 2 Logo">
+          </div>
+
+          <div class="gallery-card sponsor-logo">
+            <img src="static/images/ford.png" alt="Sponsor 3 Logo">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 MSU IEEE Student Branch. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, {
+      threshold: 0.15
+    });
+
+    fadeElements.forEach((el) => observer.observe(el));
+  </script>
+
+</body>
+</html>

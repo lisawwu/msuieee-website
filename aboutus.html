@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | MSU IEEE</title>
+
+  <link rel="stylesheet" href="static/css/navbar.css">
+  <link rel="stylesheet" href="static/css/header.css">
+  <link rel="stylesheet" href="static/css/main.css">
+  <link rel="stylesheet" href="static/css/footer.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700;800&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="static/images/ieee.png" alt="MSU IEEE Logo" class="logo-img" />
+        </a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="joinus.html">Join Us</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="about-page-title fade-in">
+      <div class="about-page-container">
+        <h1>
+          INSTITUTE OF ELECTRICAL AND ELECTRONICS ENGINEERS (IEEE)<br>
+        </h1>
+      </div>
+    </section>
+
+    <section class="about-page-section fade-in">
+      <div class="about-page-container">
+        <p>
+          IEEE is the world’s largest technical professional organization dedicated to advancing
+          technology for the benefit of humanity. Through its global network, IEEE supports innovation
+          in electrical engineering, computer engineering, electronics, telecommunications, and many
+          related fields.
+        </p>
+
+        <p>
+          At Michigan State University, our IEEE Student Branch brings students together through
+          workshops, networking opportunities, technical projects, and community events. We aim to
+          help members build practical skills, explore career paths, and connect with peers who share
+          an interest in engineering and technology.
+        </p>
+
+        <p>
+          Our organization welcomes students from all backgrounds who are interested in learning,
+          collaborating, and growing professionally. Whether you are looking for hands-on experience,
+          industry connections, or a supportive engineering community, MSU IEEE offers opportunities
+          to get involved.
+        </p>
+      </div>
+    </section>
+
+    <section class="about-page-section mission-block fade-in">
+      <div class="about-page-container">
+        <h2>Mission Statement</h2>
+        <p>
+          Our mission is to foster technological innovation, professional development, and community
+          among students at Michigan State University. We strive to create opportunities for members
+          to strengthen their technical knowledge, leadership abilities, and connections within the
+          engineering field.
+        </p>
+
+        <p>
+          Through events, workshops, and collaborative initiatives, MSU IEEE supports students in
+          preparing for academic success and future careers while promoting the broader values of
+          innovation, service, and excellence in technology.
+        </p>
+      </div>
+    </section>
+
+    <section class="about-page-section eboard-block fade-in">
+      <div class="about-page-container">
+        <h2>MSU Student Branch Officers</h2>
+
+        <div class="eboard-grid">
+          <div class="eboard-card">
+            <h3>Co-President</h3>
+            <p>Lisa Wu</p>
+            <p>wulisa1@msu.edu</p>
+          </div>
+
+          <div class="eboard-card">
+            <h3>Co-President</h3>
+            <p>Caroline Huang</p>
+            <p>huang244@msu.edu</p>
+          </div>
+
+          <div class="eboard-card">
+            <h3>Treasurer</h3>
+            <p>Sarvesh Kumar</p>
+            <p>kumars22@msu.edu</p>
+          </div>
+
+          <div class="eboard-card">
+            <h3>Secretary</h3>
+            <p>Bruno Lima</p>
+            <p>andrad38@msu.edu</p>
+          </div>
+
+          <div class="eboard-card">
+            <h3>Publicity and Outreach</h3>
+            <p>Damanpreet Dhami</p>
+            <p>dhamidam@msu.edu</p>
+            <p>Anushree Khasgiwale</p>
+            <p>khasgiwa@msu.edu</p>
+          </div>
+
+          <div class="eboard-card">
+            <h3>Technical Director</h3>
+            <p>Eric Qin | qineric@msu.edu</p>
+            <p>Kyan Matsumoto | matsum23@msu.edu</p>
+            <p>Vedant Gupte | gupteved@msu.edu</p>
+            <p>Andrew Konovalov | konoval2@msu.edu</p>
+            <p>Shahir Ahmed | ahmeds60@msu.edu</p>
+            <p>Abdullah Zahid | zahidabd@msu.edu</p>
+          </div>
+
+          <div class="eboard-card">
+            <h3>Social Event Chair</h3>
+            <p>Hannah Oberski | oberskih@msu.edu</p>
+            <p>David Dong | dongdavi@msu.edu</p>
+          </div>
+
+          <div class="eboard-card">
+            <h3>Event Coordinator</h3>
+            <p>Lucy Zhang</p>
+            <p>zhan2475@msu.edu</p>
+          </div>
+
+          <div class="eboard-card">
+            <h3>Webmaster</h3>
+            <p>Soham Bamane</p>
+            <p>bamaneso@msu.edu</p>
+          </div>
+
+          <div class="eboard-card">
+            <h3>Business Division</h3>
+            <p>Sajan Pinnamaraju | pinnam14@msu.edu</p>
+            <p>Ellen Latysh | latyshel@msu.edu</p>
+            <p>Jessica Duncan | dunca132@msu.edu</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 MSU IEEE Student Branch. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, {
+      threshold: 0.15
+    });
+
+    fadeElements.forEach((el) => observer.observe(el));
+  </script>
+
+</body>
+</html>

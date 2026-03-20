@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events | MSU IEEE</title>
+
+  <link rel="stylesheet" href="static/css/navbar.css">
+  <link rel="stylesheet" href="static/css/header.css">
+  <link rel="stylesheet" href="static/css/main.css">
+  <link rel="stylesheet" href="static/css/footer.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700;800&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="static/images/ieee.png" alt="MSU IEEE Logo" class="logo-img" />
+        </a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="joinus.html">Join Us</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="about-page-title fade-in">
+      <div class="about-page-container">
+        <h1>EVENTS</h1>
+      </div>
+    </section>
+
+    <section class="about-page-section fade-in">
+      <div class="about-page-container">
+        <h2>Connecting With Professors</h2>
+        <p>
+          Here at MSU, we have many faculty members who are IEEE members themselves.
+          We provide you with opportunities to learn about their cutting edge research
+          conducted right here on campus directly from the leading researcher through
+          our professor talk series.
+        </p>
+        <p>
+          Whether you want to get into research or build connections with our faculty
+          researchers, take advantage of the academic IEEE network.
+        </p>
+      </div>
+    </section>
+
+    <section class="about-page-section fade-in">
+      <div class="about-page-container">
+        <h2>Technical Workshops</h2>
+        <p>
+          Our MSU IEEE Student Branch hosts a variety of hands-on technical workshops
+          designed to enhance your skills and prepare you for real-world applications.
+          Whether you’re a beginner or an experienced engineer, our workshops provide
+          valuable learning opportunities in a collaborative environment.
+        </p>
+
+        <div class="eboard-grid">
+          <div class="eboard-card">
+            <h3>Intro to PCB Design</h3>
+            <p>
+              Learn the fundamentals of printed circuit board (PCB) design using
+              industry-standard software and create your own custom circuits.
+            </p>
+          </div>
+
+          <div class="eboard-card">
+            <h3>Embedded Systems &amp; Microcontrollers</h3>
+            <p>
+              Get hands-on experience programming microcontrollers like Arduino and
+              STM32 for real-world applications.
+            </p>
+          </div>
+
+          <div class="eboard-card">
+            <h3>Soldering &amp; Hardware Prototyping</h3>
+            <p>
+              Master soldering techniques and assemble your own electronic circuits
+              from scratch.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-page-section fade-in">
+      <div class="about-page-container">
+        <h2>Seminars and Professional Tours</h2>
+        <p>
+          At MSU IEEE Student Branch, we provide opportunities for students to connect
+          with industry professionals, gain career insights, and explore cutting-edge
+          technology through our seminars and professional tours.
+        </p>
+
+        <p>
+          These events are a great way to learn, network, and gain a competitive edge
+          in your career. Join us to take advantage of these valuable experiences!
+        </p>
+
+        <div class="eboard-grid">
+          <div class="eboard-card">
+            <h3>Industry Speaker Series</h3>
+            <p>
+              Hear from experienced engineers, researchers, and industry leaders about
+              the latest trends in technology, career advice, and innovation.
+            </p>
+          </div>
+
+          <div class="eboard-card">
+            <h3>Professional Company Tours</h3>
+            <p>
+              Visit leading tech companies, engineering firms, and research labs to see
+              real-world applications of engineering and network with professionals.
+            </p>
+          </div>
+
+          <div class="eboard-card">
+            <h3>IEEE &amp; Networking Events</h3>
+            <p>
+              Engage with IEEE professionals, expand your network, and explore mentorship opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 MSU IEEE Student Branch. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, {
+      threshold: 0.15
+    });
+
+    fadeElements.forEach((el) => observer.observe(el));
+  </script>
+
+</body>
+</html>
