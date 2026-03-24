@@ -30,6 +30,12 @@
         <li><a href="joinus.html">Join Us</a></li>
         <li><a href="sponsors.html">Sponsors</a></li>
       </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </nav>
 
@@ -166,6 +172,17 @@
   </footer>
 
   <script>
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        navLinks.classList.toggle('open');
+        hamburger.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+      });
+    }
+
     const fadeElements = document.querySelectorAll('.fade-in');
 
     const observer = new IntersectionObserver((entries) => {

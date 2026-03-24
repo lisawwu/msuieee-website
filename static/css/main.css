@@ -5,6 +5,7 @@ body {
   animation: pageFade 0.8s ease-in-out;
 }
 
+/* ── Info Section ── */
 .info-section {
   padding: 90px 0 50px;
 }
@@ -42,6 +43,7 @@ body {
   line-height: 1.6;
 }
 
+/* ── Gallery Section ── */
 .gallery-section {
   padding: 40px 0 80px;
 }
@@ -68,6 +70,7 @@ body {
   display: block;
 }
 
+/* ── Cards Section ── */
 .cards-section {
   padding: 40px 0 80px;
 }
@@ -116,6 +119,7 @@ body {
   background-color: transparent;
 }
 
+/* ── Join Section ── */
 .join-section {
   background-color: #1f5d35;
   padding: 70px 0;
@@ -171,6 +175,8 @@ body {
   object-fit: cover;
   display: block;
 }
+
+/* ── About Page ── */
 .about-page-title {
   padding: 110px 0 70px;
 }
@@ -208,6 +214,7 @@ body {
   margin-bottom: 35px;
 }
 
+/* ── Eboard Grid ── */
 .eboard-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -236,6 +243,7 @@ body {
   margin: 0 0 10px;
 }
 
+/* ── Social Section ── */
 .social-section {
   padding: 20px 0 80px;
 }
@@ -254,6 +262,8 @@ body {
   object-fit: contain;
   display: block;
 }
+
+/* ── Sponsor Logos ── */
 .sponsor-logo {
   display: flex;
   align-items: center;
@@ -270,6 +280,8 @@ body {
   object-fit: contain;
   display: block;
 }
+
+/* ── Fade-in animation ── */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -279,4 +291,125 @@ body {
 .fade-in.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ════════════════════════════════
+   MOBILE RESPONSIVE BREAKPOINTS
+   ════════════════════════════════ */
+
+/* Tablet: 2-column grids */
+@media (max-width: 900px) {
+  .cards-container,
+  .eboard-grid,
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .info-left h2 {
+    font-size: 2rem;
+  }
+
+  .about-page-title h1 {
+    font-size: 3rem;
+  }
+
+  .about-page-section h2 {
+    font-size: 2.8rem;
+  }
+}
+
+/* Mobile: single column */
+@media (max-width: 600px) {
+  .info-section {
+    padding: 50px 0 30px;
+  }
+
+  .info-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .info-left h2 {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+
+  .info-right p {
+    font-size: 1.05rem;
+  }
+
+  .cards-container,
+  .eboard-grid,
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+
+  .event-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .event-card p {
+    font-size: 1rem;
+  }
+
+  .learn-btn {
+    padding: 14px 22px;
+    font-size: 1rem;
+  }
+
+  .join-section {
+    padding: 50px 0;
+  }
+
+  .join-container {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .join-text h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+  }
+
+  .join-text p {
+    font-size: 1.05rem;
+  }
+
+  .join-image img {
+    height: 260px;
+  }
+
+  .about-page-title {
+    padding: 60px 0 40px;
+  }
+
+  .about-page-title h1 {
+    font-size: 2rem;
+  }
+
+  .about-page-section {
+    padding: 10px 0 40px;
+  }
+
+  .about-page-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .about-page-section p {
+    font-size: 1.1rem;
+  }
+
+  .eboard-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .social-icons a img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .gallery-card img {
+    height: 220px;
+  }
 }
